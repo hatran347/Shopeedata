@@ -1,12 +1,4 @@
-
 --Normalize Data/Standardlize data
-
-select min([Grand Total]) as min_grand_total
-	, max([Grand Total]) as max_grand_total
-	, avg([Grand Total]) as avg_grand_total
-	, var([Grand Total]) as var_grand_total--can cua phuong sai la do lech chuan 
-	, STDEV([Grand Total]) as stdev_grand_total
-from shopee_data
 
 select avg(STANDARDIZE_DATA), stdev(STANDARDIZE_DATA) 
 from
