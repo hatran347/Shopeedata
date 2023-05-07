@@ -166,6 +166,7 @@ select T.[Buyer name], isnull(Healthy_Beauty,0) Healthy_Beauty
 	, Buyer_Transaction_age
 	, Buyer_Status
 	, Prefre_Category
+into shopee_master
 from
 (
 select [Buyer name],
